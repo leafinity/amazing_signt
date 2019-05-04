@@ -173,7 +173,6 @@ def train(checkpoint_dir, imgs, iterations, bs,
     start_time_all = time.time()
     
     # build net work
-    iterations = iterations
     latent_dim = 200
     height_1, width_1 = 512, 512
 
@@ -304,7 +303,7 @@ if __name__ == '__main__':
     args = arg_parse()
     
     # load image
-    imgs_length = 100
+    imgs_length = 4000
     imgs = read_imgs(args.data_dir, imgs_length)
     
     # train
@@ -318,4 +317,3 @@ if __name__ == '__main__':
         
     else:
         test(args.result_dir, args.checkpoint_dir, bs=args.batch_size)
-                
