@@ -1,6 +1,8 @@
 # Amazing Signts - Tensorflow 2.0 Implimentation of DCGAN
 
-## abc
+## Inspiration
+
+## What it does
 
 ## Training
 
@@ -23,5 +25,9 @@
 ![result](assets/results.png)
 
 around 8000 mountain images downloaded form Unsplash
+https://drive.google.com/open?id=1256PUvIb3K1e8yx5HueTry7UedJUFgmK
+
+## What's next for Amazing Signts
+
 
 
