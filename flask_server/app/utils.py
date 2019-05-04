@@ -7,7 +7,7 @@ image_format = {
     'png': 'png',
 }
 
-def send_file(image_path, attachment_filename)
+def send_file_response(image_path, attachment_filename):
     response = make_response(send_file(image_path, attachment_filename=attachment_filename))
     response.headers['Access-Control-Allow-Origin'] = '*'
     return response
@@ -40,4 +40,3 @@ def allowed_file(filename, allow_extensions):
         return get_file_extension(filename) in allow_extensions
     else:
         return False
-
