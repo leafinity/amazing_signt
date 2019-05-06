@@ -32,29 +32,37 @@ class TopView extends Component {
     this.setState({ currentPage: photo });
   };
 
-  //   onGenerateChange = currentPage => {
-  // axios({
-  //   url: 'http://9bc25fba.ngrok.io/generate_scene/castle',
-  //   method: 'POST',
-  //   responseType: 'blob' // important
-  // }).then(response => {
-  //   const url = window.URL.createObjectURL(new Blob([response.data]));
-  //   const link = document.createElement('a');
-  //   link.href = url;
-  //   link.setAttribute('download', 'file1.png'); //or any other extension
-  //   document.body.appendChild(link);
-  //   link.click();
-  // });
-  //   };
-  onGenerateChange = currentPage => {
-    const ran = Math.floor(Math.random() * 4);
+
+
+    onGenerateChange = currentPage => {
+  axios({
+    url: 'http://9bc25fba.ngrok.io/generate_scene/'+currentPage.toLowerCase(),
+    method: 'POST',
+    responseType: 'blob' // important
+  }).then(response => {
+    const url = window.URL.createObjectURL(new Blob([response.data]));
+
     if (currentPage === 'Mountain') {
-      this.setState({ link: this.moun[ran] });
+      this.setState({ link: url });
+    }else if(currentPage === 'Desert') {
+      this.setState({ link: url });
+    }else if(currentPage === 'Castle') {
+      this.setState({ link: url });
+    }else if(currentPage === 'Waterfall') {
+      this.setState({ link: url });
     }
-    if (currentPage === 'Desert') {
-      this.setState({ link: this.des[ran] });
-    }
-  };
+
+  });
+    };
+  // onGenerateChange = currentPage => {
+  //   const ran = Math.floor(Math.random() * 4);
+  //   if (currentPage === 'Mountain') {
+  //     this.setState({ link: this.moun[ran] });
+  //   }
+  //   if (currentPage === 'Desert') {
+  //     this.setState({ link: this.des[ran] });
+  //   }
+  // };
 
   render() {
     const { currentPage, photoType, link } = this.state;
