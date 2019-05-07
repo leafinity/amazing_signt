@@ -1,9 +1,5 @@
 # Amazing Signts - Tensorflow 2.0 Implimentation of DCGAN
 
-## Inspiration
-
-## What it does
-
 ## Training
 
 * first time
@@ -27,7 +23,14 @@ https://drive.google.com/open?id=1256PUvIb3K1e8yx5HueTry7UedJUFgmK
 ## Demo Website
 http://amazingsignts.ngrok.io
 
-## What's next for Amazing Signts
+
+## Weights
+https://drive.google.com/open?id=1DppoNi9fswsGfwOQbDiYiiKjr1DnuVAX
 
 
-
+## Data
+* around 8000 mountain images downloaded form Unsplash
+* around 5000 building images downloaded form Unsplash
+* around 4000 desert images downloaded form Unsplash
+* around 3000 lake images downloaded form Unsplash
+* around 1500 waterfall images downloaded form Unsplash
