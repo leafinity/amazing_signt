@@ -8,11 +8,11 @@ const NavBar = () => {
       <div
         className="navbar-brand"
         style={{
-          fontSize: 25
+          fontSize: 25,
+          margin: '0px 0px 0px 20px'
         }}
       >
-        Amazing Si
-        <a style={{ color: 'red', fontSize: 25 }}>gn</a>h {''}
+        Amazing Si<a style={{ color: 'red', fontSize: 25 }}>gn</a>t {''}
         <span className="badge-pill badge-warning">
           <span
             style={{
@@ -21,7 +21,7 @@ const NavBar = () => {
           >
             w/
           </span>
-          Tensorflow 2.0
+          TensorFlow 2.0
         </span>
       </div>
       <span
@@ -31,7 +31,7 @@ const NavBar = () => {
           color: '#000000'
         }}
       >
-        English/Traditional Mandain
+        English/Traditional Mandarin
       </span>
     </nav>
   );
