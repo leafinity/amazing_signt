@@ -14,3 +14,6 @@ Tensorflow-2.0 implementation of ["Self-Attention Generative Adversarial Network
 
 ## Contributors
 trainer.py contributed by [Kinna](https://github.com/KinnaChen)
+
+## For Easily Download and Use
+[Github](https://github.com/leafinity/SAGAN-tensorflow2.0)
