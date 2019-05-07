@@ -10,7 +10,7 @@ class TopView extends Component {
   state = {
     link: file1,
     currentPage: 'Mountain',
-    photoType: ['Mountain', 'Desert', 'Castle', 'Waterfall']
+    photoType: ['Mountain', 'Desert', 'Lake', 'Waterfall']
   };
 
   handlePhotoChange = photo => {
@@ -30,7 +30,7 @@ class TopView extends Component {
         this.setState({ link: url });
       } else if (currentPage === 'Desert') {
         this.setState({ link: url });
-      } else if (currentPage === 'Castle') {
+      } else if (currentPage === 'Lake') {
         this.setState({ link: url });
       } else if (currentPage === 'Waterfall') {
         this.setState({ link: url });

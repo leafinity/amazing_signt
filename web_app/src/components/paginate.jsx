@@ -1,5 +1,5 @@
 import React from 'react';
-import castle from '../img/castle.jpg';
+import lake from '../img/lake.jpg';
 import mountain from '../img/mountain.jpeg';
 import desert from '../img/desert.jpg';
 import waterfall from '../img/waterfall.jpeg';
@@ -19,7 +19,7 @@ const Pagination = props => {
   const showPic = pic => {
     if (pic === 'Mountain') return mountain;
     if (pic === 'Desert') return desert;
-    if (pic === 'Castle') return castle;
+    if (pic === 'Lake') return lake;
     if (pic === 'Waterfall') return waterfall;
   };
 
