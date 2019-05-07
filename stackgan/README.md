@@ -9,7 +9,10 @@ run `StackGAN.ipynb` and change the image path.
 
 ## Results
 
-![result](../assets/stack_result.jpg)
+![small size results](../assets/small_stack_result.png)
+
+target size results
+![target size results](../assets/target_stack_result.png)
 
 
 ## Contributors
