@@ -47,12 +47,11 @@ const Pagination = props => {
           src={showPic(currentPage)}
           className="img-thumbnail"
           alt="logo"
-          styles={imgSize}
+          height="10"
           width="300"
-          height="300"
         />
       </div>
-      <p style={textAlign}>original Pics</p>
+      <p style={textAlign}>Picture type</p>
     </React.Fragment>
   );
 };
